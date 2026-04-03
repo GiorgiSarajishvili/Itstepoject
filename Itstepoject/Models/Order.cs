@@ -11,7 +11,11 @@ namespace Itstepoject.Models
     public class Order
     {
         public int Id { get; set; }
+
+        [Required]
+        [StringLength(100, MinimumLength = 2)]
         public required string CustomerName { get; set; }
+
         public DateTime OrderDate { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Cart;
         // Belongs to a specific user (IdentityUser.Id).

@@ -1,6 +1,6 @@
 @Itstepoject_HostAddress = http://localhost:5197
 
-GET {{Itstepoject_HostAddress}}/weatherforecast/
+GET {{Itstepoject_HostAddress}}/api/menu
 Accept: application/json
 
 ###

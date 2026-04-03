@@ -22,8 +22,6 @@ builder.Services
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IMenuService, MenuService>();
-builder.Services.AddScoped<IBagService, BagService>();
-builder.Services.AddScoped<IAccessoryService, AccessoryService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
 builder.Services.AddEndpointsApiExplorer();
